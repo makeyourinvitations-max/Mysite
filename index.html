@@ -78,6 +78,11 @@
   .ornament-divider { text-align: center; padding: 1rem 0; color: var(--gold); font-size: 1rem; letter-spacing: .5rem; opacity: .45; margin-bottom: .5rem; }
 
   /* PRICING */
+  .section-why { padding: 6rem 5rem 5rem; background: var(--warm-white); text-align: center; }
+  .why-subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; color: var(--gold); max-width: 700px; margin: 0 auto 1.2rem; }
+  .why-desc { font-size: .98rem; font-weight: 300; line-height: 1.8; color: var(--charcoal); max-width: 700px; margin: 0 auto 2.5rem; }
+  .why-features { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 900px; margin: 0 auto; }
+  .why-feature { background: white; border: 1px solid var(--border-rose); border-radius: 50px; padding: .9rem 1.8rem; font-size: .88rem; font-weight: 500; color: var(--rose); box-shadow: 0 2px 20px rgba(232,24,90,0.05); }
   .section-pricing { padding: 7rem 5rem; background: var(--warm-white); }
   .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 860px; margin: 0 auto; }
   .price-card { background: white; border: 1.5px solid var(--border-rose); border-radius: 20px; padding: 3rem 2.5rem; position: relative; text-align: center; box-shadow: 0 4px 32px rgba(232,24,90,0.06); transition: transform .3s, box-shadow .3s; }
@@ -171,7 +176,7 @@
     .nav-links{display:flex;gap:1.2rem;flex-wrap:wrap;}
     .nav-links a{font-size:.7rem;letter-spacing:.1em;}
     .nav-cta{font-size:.7rem;padding:.5rem 1rem;}
-    .section-pricing,.section-how,.section-faq{padding:5rem 1.5rem;}
+    .section-pricing,.section-how,.section-faq,.section-why{padding:5rem 1.5rem;}
     footer{padding:3rem 1.5rem 2rem;}
     .trust-band{padding:1.2rem 1.5rem;gap:1.5rem;}
     .pricing-grid{grid-template-columns:1fr;max-width:420px;}
@@ -200,7 +205,7 @@
   @media(max-width:900px){
     nav{padding:1.2rem 1.5rem;}
     .nav-links{display:none;}
-    .section-pricing,.section-how,.section-faq{padding:5rem 1.5rem;}
+    .section-pricing,.section-how,.section-faq,.section-why{padding:5rem 1.5rem;}
     footer{padding:3rem 1.5rem 2rem;}
     .trust-band{padding:1.2rem 1.5rem;gap:1.5rem;}
     .pricing-grid{grid-template-columns:1fr;max-width:420px;}
@@ -245,8 +250,8 @@
   <div class="hero-ring hero-ring-3"></div>
   <div class="hero-content">
     <div class="hero-badge">🎵 Authentic Telugu · Godavari Slang · Voice Invitations</div>
-    <h1 class="hero-title">Godavari Slang Wedding Voice Invitations Delivered in 24 Hours</h1>
-    <p class="hero-subtitle">Authentic Telugu voice invitations for weddings and family celebrations — trusted by 5000+ happy families</p>
+    <h1 class="hero-title">Godavari Slang Wedding Invitations</h1>
+    <p class="hero-subtitle">Authentic Godavari voice invitations, personalised for your wedding — delivered within 24 hours.</p>
     <div class="hero-trust">
       <span>⭐ 5.0 Google Rating</span>
       <span class="trust-sep">|</span>
@@ -278,6 +283,19 @@
   <div class="trust-item"><span class="trust-dot"></span>5000+ Happy Families</div>
 </div>
 
+<!-- WHY CHOOSE US -->
+<section class="section-why">
+  <div class="ornament-divider">✦ ✦ ✦</div>
+  <h2 class="section-heading">Why Make Your Invitations for Your Godavari Wedding?</h2>
+  <p class="why-subtitle">Mana Godavari pelli ki mana Godavari yasa undali.</p>
+  <p class="why-desc">We create personalised wedding invitations in authentic Godavari slang — with natural narration, emotion and the warmth of a family invitation.</p>
+  <div class="why-features">
+    <div class="why-feature">🎙️ Authentic Godavari Narration</div>
+    <div class="why-feature">❤️ Natural &amp; Emotional Storytelling</div>
+    <div class="why-feature">🎬 Cinematic Wedding Invitation Videos</div>
+  </div>
+</section>
+
 <!-- PRICING -->
 <section class="section-pricing" id="pricing">
   <h2 class="section-heading">Pricing</h2>
@@ -298,7 +316,7 @@
     <div class="price-card">
       <div class="price-tier">🌿 Classic Godavari Voice</div>
       <div class="price-original">₹2200</div>
-      <div class="price-amount">₹1800</div>
+      <div class="price-amount">₹1999</div>
       <ul class="price-features">
         <li><span class="ck">✓</span> Natural Godavari slang narration</li>
         <li><span class="ck">✓</span> Customized voice invitation with your details</li>
@@ -403,14 +421,21 @@
       </button>
       <div class="faq-answer">We offer up to 2 free revisions per order to ensure you are completely satisfied with the final invitation. Additional revisions may be accommodated at a nominal charge.</div>
     </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Do you create Godavari Slang Wedding Invitations?
+        <span class="faq-arrow">▶</span>
+      </button>
+      <div class="faq-answer">Yes. Make Your Invitations specialises in personalised Godavari Slang Wedding Invitations, with authentic Godavari narration and customised wedding details. You can choose from our Classic or Premium Godavari voice options.</div>
+    </div>
   </div>
 </section>
 
 <!-- SAMPLE AUDIO PREVIEW -->
 <section class="section-audio">
   <div class="ornament-divider">✦ ✦ ✦</div>
-  <h2 class="section-heading">Hear It Before You Order 🎵</h2>
-  <p class="audio-subtext">Listen to real sample invitations crafted by us — in pure Godavari slang</p>
+  <h2 class="section-heading">Hear Our Godavari Slang Invitations 🎵</h2>
+  <p class="audio-subtext">Don't just read about our voice — hear the Godavari feel yourself.</p>
   <div class="audio-cards">
     <a href="https://drive.google.com/drive/folders/1lGU5K6YAJjmm4oasQBSD3sUC4gkbGjcA?usp=drive_link" class="audio-card" target="_blank">
       <div class="audio-play">▶</div>
